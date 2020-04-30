@@ -1,0 +1,113 @@
+#digital{
+    margin: 100px 0 70px 0;
+    h3{
+        font-size: 32px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-bottom: 26px;
+      }
+      .text-p{
+        max-width: 45%;
+        margin-left: 28%;
+          
+      }
+
+      p{
+          font-size: 23px;
+          font-family: $font-f;
+          color: $text-color;
+          
+      }
+    }
+  
+ .showall{
+      color: rgb(219, 219, 219);
+      margin: 90px 435px 15px;
+  
+       li{
+          list-style-type: none;
+          display: inline;
+          margin: 0 7px;
+          
+  
+          a{
+              text-decoration: none;
+              color: rgb(219, 219, 219);
+              font-style: italic;
+              font-family: $font-f;
+              &:hover{
+                  color: #767676;
+                  transition: 0.8s;
+              }
+          }
+          .disabled{
+              color: #767676;
+              pointer-events: none;
+              
+          }
+      }
+  }
+
+#digital{
+
+  .imgrow{
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+
+    .col-lg-4{
+      padding: 0;
+
+
+      .img-holder{
+
+        cursor: pointer;
+
+        &:hover .layer{
+          transform: translate3d(0, 0, 0);
+          -webkit-transform: translate3d(0, 0, 0);
+          opacity: 1;
+          z-index: 3;
+          height: 100%;
+
+          .text-holder{
+              height: 100%;
+
+          }
+
+        }
+
+        .layer{
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.747);
+          color: white;
+          padding: 2.4375em;
+          text-align: right;
+          opacity: 0;
+        
+      
+          transition: all 0.3s ease-in ;
+
+
+          .text-holder{
+            bottom: 0;
+            left: 0;
+            height:95%;
+            width: 100%;
+            transition: all 0.3s ease-in;
+            padding: 2.4375em;
+
+          }
+        }
+      }
+     
+    }
+
+  }
+}
