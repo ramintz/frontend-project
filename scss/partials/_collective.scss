@@ -1,23 +1,100 @@
 
 #collective{
+    margin-bottom: 130px;
+    .your-collective{
+        margin-bottom: 130px;
+    }
 
 h3{
-    font-size: 32px;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-bottom: 26px;
+    @extend %h3-extend;
   }
   .text-p{
-    max-width: 45%;
-    margin-left: 28%;
-      
+    max-width: 55%;
+    margin-left: 23%;
   }
 
   p{
-      font-size: 23px;
-      font-family: $font-f;
-      color: $text-color;
-      
+    @extend %p-extend;
   }
 
+}
+
+//team 
+.team-container{
+    
+}
+
+.team-img{
+    position: relative;
+    width: 100%;
+    &:hover{
+        .team-hover{
+            width: 100%;
+            left: 0;
+        }
+    }
+  
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
+
+    .sosial-list-team{
+        font-size: 20px;
+        letter-spacing: 10px;
+       margin-top: 75%;
+       
+
+    a{
+        text-decoration: none;
+        color: gray;
+        &:hover{
+            color: white;
+            transition: 0.5s;
+        }
+    }
+}
+
+.team-hover{
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.829);
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        h6{
+            font-size: 0.625em;
+            line-height: 2.6em;
+            text-transform: uppercase;
+            color: gray;
+        }
+        h5{
+            color: rgba(255, 255, 255, 0.89);
+        }
+        
+        
+      
+}
+
+.team-hover-items{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+
+ 
 }

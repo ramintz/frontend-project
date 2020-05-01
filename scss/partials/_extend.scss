@@ -5,13 +5,13 @@
     margin-bottom: 26px;
 }
 
+%text-p-extend{
+    max-width: 45%;
+        margin-left: 28%;
+}
+
 %p-extend{
     font-size: 23px;
     font-family: $font-f;
     color: $text-color;
-}
-
-%text-p-shared{
-    max-width: 45%;
-        margin-left: 28%;
 }
