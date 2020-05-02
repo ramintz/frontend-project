@@ -221,6 +221,56 @@ body {
   color: rgba(255, 255, 255, 0.692);
 }
 
+.inter {
+  height: 183px;
+  background-color: #425cbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inter .inter-items h4 {
+  color: #ffff;
+  font-size: 23px;
+  display: inline;
+  font-weight: 500;
+}
+
+.inter .inter-items .btn {
+  background-color: #425cbb;
+  border-radius: 50px;
+  width: 188px;
+  height: 45px;
+  margin-left: 26px;
+  border: 1px solid rgba(155, 155, 155, 0.945);
+}
+
+.inter .inter-items .btn:hover {
+  border-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.inter .inter-items .btn span {
+  text-transform: uppercase;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .popup {
   width: 100%;
   height: 100%;
