@@ -7,6 +7,7 @@
   <title>Pillar Multipurpose HTML Template</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <script src="https://kit.fontawesome.com/d4208a264d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="scss/style.css">
 
@@ -115,7 +116,7 @@
 
     <!-- digital section start -->
     <section id="digital">
-      <div class="container-fluid">
+      <div class="container-fluid" style="padding: 0!important;">
         <div class="row text-center">
 
           <div class="col-lg-12">
@@ -127,23 +128,23 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row " style="margin: 0!important;">
           <div class="showall">
             <ul>
-              <li><a href="" class="disabled">Show All</a></li>
+              <li><a href="" data-filter=".all">Show All</a></li>
               <li>/</li>
-              <li><a class="branding" href="">Branding</a></li>
+              <li><a class="branding" data-filter=" .branding" href="">Branding</a></li>
               <li>/</li>
-              <li><a class="digital" href="">Digital</a></li>
+              <li><a class="digital" data-filter=" .digital" href="">Digital</a></li>
               <li>/</li>
-              <li><a class="packaging" href="">Packaging</a></li>
+              <li><a class="packaging" data-filter=" .packaging" href="">Packaging</a></li>
             </ul>
-          </div>
+          </div>`
         </div>
-        <div class="row imgrow">
+        <div class="row imgrow" style="margin: 0!important;">
 
 
-          <div class="col-lg-4">
+          <div class="col-lg-4  item  digital all ">
             <div class="img-holder position-relative">
               <img src="img/home/digital/digital-1.jpg" alt="">
 
@@ -159,8 +160,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div branding="" class="img-holder position-relativeding branding ">
+          <div class="col-lg-4  item  branding all">
+            <div class="img-holder position-relativeding branding ">
               <img src="img/home/digital/digital-2.jpg" alt="">
 
               <div class="layer position-absolute">
@@ -175,8 +176,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div link="branding" class="img-holder position-relative branding ">
+          <div class="col-lg-4  item branding all">
+            <div class="img-holder position-relative branding ">
               <img src="img/home/digital/digital-3.jpg" alt="">
 
               <div class="layer position-absolute">
@@ -191,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4  item  packaging all">
             <div class="img-holder position-relative">
               <img src="img/home/digital/digital-4.jpg" alt="">
 
@@ -205,9 +206,11 @@
                 </div>
 
               </div>
+
             </div>
           </div>
-          <div link="branding" class="col-lg-4">
+
+          <div class="col-lg-4  item branding all">
             <div class="img-holder position-relative branding">
               <img src="img/home/digital/digital-5.jpg" alt="">
 
@@ -223,7 +226,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4  item  digital all ">
             <div class="img-holder position-relative">
               <img src="img/home/digital/digital-6.jpg" alt="">
 
@@ -240,8 +243,8 @@
             </div>
           </div>
 
-
         </div>
+      </div>
       </div>
     </section>
     <!-- digital-section end -->
@@ -368,7 +371,243 @@
     </section>
     <!-- collective section start -->
 
-    
+    <!-- home-parallax start -->
+    <section id="home-parallax">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-3">
+            <div class="parallax-items">
+              <i class="fas fa-dumbbell fa-5x"></i>
+              <h3>16,000+</h3>
+              <span>Customers strong</span>
+            </div>
+
+          </div>
+          <div class="col-lg-3">
+            <div class="parallax-items text-center">
+              <i class="fas fa-fingerprint fa-5x"></i>
+              <h3>16</h3>
+              <span>Passionate team members</span>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="parallax-items">
+              <i class="fas fa-user-astronaut fa-5x"></i>
+              <h3>82</h3>
+              <span>Launched startups</span>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="parallax-items">
+              <i class="fas fa-tshirt fa-5x"></i>
+              <h3>Zero</h3>
+              <span>Plaid cardigans</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- home-parallax end -->
+
+    <!-- expertise section start -->
+    <section id="expertise">
+      <div class="conatiner expertise ">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="expertise text-center">
+              <h3>Our Expertise</h3>
+              <div class="text-p text-center">
+                <p class="lead">
+                  We work across digital and print media to deliver bold, effective identities for businesses in all
+                  industries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container expertise-info">
+          <div class="row">
+            <div class="col-lg-6 column">
+              <div class="interface">
+                <div class="left">
+                  <i class="far fa-window-maximize fa-3x"></i>
+                </div>
+                <div class="right">
+                  <h6>INTERFACE DESIGN</h6>
+                  <p>Pillar comes packed with flexible content blocks and Variant Page Builder - this makes building
+                    your perfect layout easier than ever before.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="interface">
+                <div class="left">
+                  <i class="fas fa-brain fa-3x"></i>
+                </div>
+                <div class="right">
+                  <h6>USER INTERACTION</h6>
+                  <p>Combine multiple purpose-built elements to craft your perfect, conversion focussed landing page -
+                    and do it all in the comfort of your browser.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="interface">
+                <div class="left">
+                  <i class="fas fa-biohazard fa-3x"></i>
+                </div>
+                <div class="right">
+                  <h6>INTERNET OF THINGS
+                  </h6>
+                  <p>Clever social integrations such as Mail Chimp, Compaign Monitor and styled Twitter feeds give your
+                    site a dynamic edge.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="interface">
+                <div class="left">
+                  <i class="fas fa-user-astronaut fa-3x"></i>
+                </div>
+                <div class="right">
+                  <h6>PRODUCT DESIGN
+                  </h6>
+                  <p>Flexible data attribute modifiers make customising elements fast and easy. Add overlays, scrims and
+                    adjust plugin parameters all from the HTML.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid dangibson ">
+          <div class="row">
+            <div class="col-lg-6 dgcol">
+              <div class="dan-gibson-img">
+                <img src="img/home/dan-gibson.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 dgcol">
+              <div class="dan-gibson-info">
+                <blockquote class="blockquote">
+                  <p>“I was a blown away by the design quality and sheer level of attention-to-detail, sweet!”</p>
+                  <footer class="blockquote-footer">Dan Gibson</footer>
+                </blockquote>
+                <h6>INTERFACE DESIGNER</h6>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- expertise section end -->
+    <!-- news section start -->
+    <section id="news">
+      <div class="container news-header">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="expertise text-center">
+              <h3>News & Views
+              </h3>
+              <div class="text-p text-center">
+                <p class="new-lead">
+                  We share our thoughts on design, business and life in general. Check out the blog for our latest
+                  musings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="max-width: 1170px !important;" class="container cards">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/home/news-card/card1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-h6">Lifestyle</h5>
+                <h6 class="card-h5">Living large in a small apartment: One man's quest to downsize</h6>
+                <hr>
+                <div class="card-text-lower">
+                  <span class="card-span">by</span>
+                  <h6 class="card-h6-lower">Cameron Smith</h6>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/home/news-card/card2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-h6">Technology</h5>
+                <h6 class="card-h5">Good photography is the key to your online presence</h6>
+                <hr>
+                <div class="card-text-lower">
+                  <span class="card-span">by</span>
+                  <h6 class="card-h6-lower">Robin Banks</h6>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/home/news-card/card3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-h6">Travel</h5>
+                <h6 class="card-h5">Meet the couple who ran their online business from a tent</h6>
+                <hr>
+                <div class="card-text-lower">
+                  <span class="card-span">by</span>
+                  <h6 class="card-h6-lower">Abby Bollard</h6>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <div class="view">
+              <button type="button" class="btn btn-outline-secondary">
+                <span>Wiew The Blog</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      <!-- news section end -->
+  </section>
+
+    <!--  -->
+    <section id="owl-carousel">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"style="width:150px;"><img src="img/home/owl-carousel/google.png" alt=""></div>
+                    <div class="item"style="width:100px;"><img src="img/home/owl-carousel/apple.png" alt=""></div>
+                    <div class="item"style="width:150px;"><img src="img/home/owl-carousel/envato.png" alt=""></div>
+                    <div class="item"style="width:100px;"><img src="img/home/owl-carousel/github.png" alt=""></div>
+                    <div class="item"style="width:150px;"><img src="img/home/owl-carousel/dribble.png" alt=""></div>
+                    <div class="item"style="width:150px;"><img src="img/home/owl-carousel/microsoft.png" alt=""></div>
+                    <div class="item"style="width:150px;"><img src="img/home/owl-carousel/spotify.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
   </main>
 
   <footer>
@@ -389,8 +628,11 @@
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

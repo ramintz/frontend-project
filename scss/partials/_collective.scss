@@ -20,9 +20,7 @@ h3{
 }
 
 //team 
-.team-container{
-    
-}
+
 
 .team-img{
     position: relative;
@@ -69,7 +67,7 @@ h3{
         overflow: hidden;
         width: 0;
         height: 100%;
-        transition: .5s ease;
+        transition: 0.5s ease-out;
         h6{
             font-size: 0.625em;
             line-height: 2.6em;

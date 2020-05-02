@@ -1,0 +1,137 @@
+
+.expertise{
+    margin-bottom: 100px;
+    h3{
+        @extend %h3-extend;
+      }
+      .text-p{
+        max-width: 55%;
+        margin-left: 23%;
+      }
+    
+      .lead{
+        @extend %p-extend;
+      }
+    
+    }
+
+.expertise-info{
+    margin-bottom: 130px;
+    .interface{ 
+        display: flex;
+        margin-bottom: 52px;
+        .left{
+            margin: 0 26px 0 0;
+            i{
+                color: #425cbb ;
+                line-height: 1em;
+                font-size: 2.8125em;
+                
+                
+            }
+        }
+
+        .right{
+            
+            color: $text-color;
+            width: 400px;
+
+            h6{
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 250;
+                margin-bottom: 28px;
+                font-size: 12px;
+            }
+
+            p{
+                margin: 0 0 26px;
+                
+
+            }
+
+            
+        }
+    }
+}
+
+//dangibson-start
+
+.container-fluid.dangibson{
+    padding: 0 !important;
+}
+.dangibson{
+    position: relative;
+    height: 474px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    &::before{
+         position: absolute;
+         content: '';
+         width: 100%;
+         background: #f4f4f4;
+         bottom: 0em;
+         top: 82px;
+        }
+    
+    }
+
+    .dgcol{
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+    .dan-gibson-img{
+
+        img{
+            height: 473px;
+            width: 555px;
+            margin-left: 100px;
+        }
+    }
+
+    .dan-gibson-info{
+        margin-top: 182px;
+        width: 85%; 
+        .blockquote{
+
+            
+
+            p{
+                margin-bottom: 26px;
+                font-size: 23px;
+                line-height: 1.69565217391304em;
+                font-style: italic;
+                font-family: $font-f;
+                color: $text-color;
+            }
+            .blockquote-footer{
+                display: block;
+                font-size: 80%;
+                color: rgba(0, 0, 0, 0.747);
+                font-size: 16px !important;
+                font-weight: 700;
+            }
+        }
+
+        h6{
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 12px;
+            color: $text-color;
+            
+        }
+    }
+
+
+
+
+
+    // dangibsion end
+
+
+

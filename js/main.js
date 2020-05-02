@@ -26,68 +26,47 @@ $(document).ready(function () {
     });
 
 
-    $(".showall ul li a").each(function(){
+    
+
+    $(".imgrow").isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows',
+
+      });
+
+      $(".showall ul li a").click(function(e){
+
+       e.preventDefault();
+
+            var selector  = $(this).attr("data-filter");
+
+            $(".imgrow").isotope({
+
+                    filter: selector
 
 
-        var appendimages = $(".imgrow .img-holder").attr("branding")
+            });
 
-        console.log(appendimages)
-        // $(this).click(function(e){
+            return false;
 
-        //     e.preventDefault();
-        //     // var cl = $(this).attr("class");
 
-        //     // var images = $(".imgrow .img-holder").hasClass(cl) 
-           
-           
-     
-          
-        //     // if(appendimages.contains(cl)){
-        //     //     console.log("salam")
-
-        //     // }
-          
-          
-      
-        //     // if(images == true){
-               
-             
-        //     //     $(".imgrow").html("")
-        //     //     $(".imgrow").append()
-        //     // }
         
-        // })  
-
+         })
+    
+    // owl-carousel
+    var owlc = $('.owl-carousel');
+    owlc.owlCarousel({
+        items:6,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
+    });
+    $('.play').on('click',function(){
+        owlc.trigger('play.owl.autoplay',[1000])
     })
-
-    // $(".showall ul li a").each(click(function(e){
-
-    
-
-    //     e.preventDefault();
-
-
-       
-
-
-
-  
-
-
-    // }))
-
-    // $(".branding").click(function (e) { 
-    //     e.preventDefault()
-    //     $(".digital-img , .packaging-img").remove()
-    // });
-    
-    // $(".digital").click(function (e) { 
-    //     e.preventDefault()
-    //     $(".branding-img , .packaging-img").remove()
-    // });
-
-    // $(".packaging").click(function (e) { 
-    //     e.preventDefault()
-    //     $(".branding-img , .digital-img").remove()
-    // });
+    $('.stop').on('click',function(){
+        owlc.trigger('stop.owl.autoplay')
+    })
 });

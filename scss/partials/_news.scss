@@ -1,0 +1,101 @@
+
+#news{
+    // margin-bottom: 130px;
+
+   
+}
+
+.new-lead{
+    @extend %p-extend;
+    width: 733px;
+    margin-left: -60px;
+}
+
+//card
+.card-body{
+
+    padding: 26px !important;
+
+    .card-h6{
+        font-size: 11px;
+        color: #767676;
+        margin: 0 0 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    .card-h5{
+        font-weight: 400;
+        margin: 0 0 26px;
+        height: 78px;
+    }
+
+    hr{
+        margin: 0 0 26px;
+    }
+
+    .card-text-lower{
+
+
+        .card-span{
+             font-size: 0.625em;
+             font-style: italic;
+             
+             color: #767676;
+        }
+
+        .card-h6-lower{
+             text-transform: uppercase;
+             letter-spacing: 1px;
+             font-weight: 400;
+             display: inline-block;
+             margin: 0;
+             font-size: 10px;
+             color: #767676;
+
+        }
+    }
+
+}
+
+.card{
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.4s;
+    }
+}
+
+//card
+
+//view button
+
+.view{
+    margin: 65px 0;
+    height: 103px;
+    .btn{   
+        width: 200px;
+        height: 51px;
+        border-radius: 100px;
+        border: 1px solid #bbbbbb;
+        border-width: 2px;
+        font-size: inherit;
+        line-height: 10px;
+        text-transform: uppercase;
+        &:hover{
+            background: unset;
+            border: 1px solid black;
+            transition: 0.3s;
+        }
+    
+
+
+        span{
+            color: #343434;
+            border-color: #343434;
+            font-weight: 400;
+            font-size: 0.625em;
+        }
+    }
+}
