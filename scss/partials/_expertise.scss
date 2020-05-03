@@ -1,6 +1,6 @@
 
 .expertise{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     h3{
         @extend %h3-extend;
       }
@@ -66,6 +66,7 @@
     width: 100%;
     left: 0;
     right: 0;
+    margin-bottom: 130px;
     &::before{
          position: absolute;
          content: '';
